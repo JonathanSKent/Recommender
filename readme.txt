@@ -2,13 +2,6 @@ Recommender Readme
 
 ############################
 
-Howdy,
-
-If you're reading this, it means that you're looking over the files that make up something 
-called the "recommender," a description of which will be found in this document.
-
-############################
-
 WHAT IS ITS PURPOSE?
 
 This codebase was created in order to solve - at least partially, via one methodology - the
@@ -60,7 +53,12 @@ and re-projecting it. This will let user preferences change over time, as well a
 preferences by the user without recalculating everything all over again. To make sure everything's
 still good, recalculate the user's cluster with the K-Means model applied to the user's vector.
 
-Step 7) Assign as recommendations for a given user the n papers of that day within the user's
+Step 7) Assign as recommendations for a givenecho "# Recommender" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/JonathanSKent/Recommender.git
+git push -u origin master user the n papers of that day within the user's
 cluster whose vector has the least Euclidean distance to the vector of the paper. This
 is where the clusters come into play. Chances are, if the paper isn't given the same cluster
 by the K-Means model as the user, it almost certainly won't be in the top few papers that the
