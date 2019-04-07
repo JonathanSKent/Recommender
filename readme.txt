@@ -55,7 +55,8 @@ Step 5) Get they day's new papers, vectorize them, and assign them each a cluste
 model.
 
 Step 6) For all users, update their vector by taking the existing vector, multiplying it by
-(1-alpha) for some learning rate alpha, adding to it alpha * mean(vectors of papers the user got), and re-projecting it. This will let user preferences change over time, as well as adapt to new
+(1-alpha) for some learning rate alpha, adding to it alpha * mean(vectors of papers the user got), 
+and re-projecting it. This will let user preferences change over time, as well as adapt to new
 preferences by the user without recalculating everything all over again. To make sure everything's
 still good, recalculate the user's cluster with the K-Means model applied to the user's vector.
 
